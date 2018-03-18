@@ -1,0 +1,370 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.main-colour {
+  color: #2D3C49;
+}
+
+.sub-colour {
+  color: #7D97AD;
+}
+
+.complementary-colour {
+  color: #02B3E4;
+}
+
+/*
+*
+* HEADER
+*
+*/
+
+header {
+  display: flex;
+}
+
+header > div {
+  display: flex;
+  width: 50%;
+}
+
+#header-left {
+  align-items: center;
+}
+
+#header-right {
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+#name, #subtitle {
+  margin: 0;
+}
+
+#name {
+  font-weight: lighter;
+}
+
+#subtitle {
+  font-size: 18px;
+}
+
+.hr-line {
+  background-color: #7D97AD;
+  border: 0 none;
+  color: #7D97AD;
+  margin: 0;
+}
+
+/*
+*
+* MAIN
+*
+*/
+
+#main-photo {
+  width: 100%;
+}
+
+#featured-work {
+  margin: 50px 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work {
+  width: 30%;
+  text-align: center;
+}
+
+#work-col-2 {
+  margin: 0 5%;
+}
+
+.work-title {
+  font-size: 24px;
+}
+
+.work-title::before {
+  content: "- ";
+}
+
+.work-title::after {
+  content: " -";
+}
+
+.work-photo {
+  width: 100%;
+}
+
+.work-description {
+  font-style: italic;
+}
+
+.work-description, .work-link {
+  font-size: 14px;
+}
+
+.work-link {
+  text-decoration: none;
+  border: 2px solid #02B3E4;
+  display: inline-block;
+  padding: 15px;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+
+.work-link:hover {
+  background-color: #02B3E4;
+  color: white;
+}
+
+.work-link:active {
+  background-color: #7D97AD;
+  border: 2px solid #7D97AD;
+}
+
+/*
+*
+* FOOTER
+*
+*/
+
+footer {
+  border-top: 1px solid #7D97AD;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/*
+*
+* UP ARROW
+*
+*/
+
+#up-arrow {
+  position: fixed;
+  bottom: 50px;
+  right: 75px;
+  color: white;
+  background-color: #70C1B3;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: padding 0.3s, bottom 0.3s, right 0.3s, background-color 0.3s;
+  display: none;
+}
+
+#up-arrow:hover {
+  background-color: #8AB0AB;
+}
+
+/*
+*
+* MEDIA QUERIES
+*
+*/
+
+@media screen and (max-width: 610px) {
+
+  header {
+    padding: 20px;
+  }
+
+  #header-left {
+    width: 25%;
+  }
+
+  #udacity-logo {
+    width: 30px;
+  }
+
+  #header-right {
+    width: 75%;
+  }
+
+  #name {
+    font-size: 22px;
+    letter-spacing: 3px;
+  }
+
+  #subtitle {
+    font-size: 14px;
+  }
+
+  .hr-line {
+    height: 2px;
+    margin-bottom: 35px;
+  }
+
+  #featured-work h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  #work-col-2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #work-col-1, #work-col-2 {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #7D97AD;
+    padding-bottom: 25px;
+  }
+
+  .work-title {
+    font-size: 16px;
+  }
+
+  footer {
+    padding-left: 10px;
+  }
+
+  #up-arrow {
+    right: 20px;
+    bottom: 30px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 611px) {
+
+  header {
+    padding: 25px;
+  }
+
+  #udacity-logo {
+    width: 50px;
+  }
+
+  #name {
+    font-size: 34px;
+  }
+
+  .hr-line {
+    height: 3px;
+    margin-bottom: 35px;
+  }
+
+  #featured-work h2 {
+    margin-left: 18px;
+    font-size: 24px;
+  }
+
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+
+  .work {
+    width: 45%;
+  }
+
+  #work-col-1 {
+    margin-right: 5%;
+  }
+
+  #work-col-2 {
+    margin: 0;
+    margin-left: 5%;
+  }
+
+  #work-col-3 {
+    margin: auto;
+    margin-top: 5%;
+  }
+
+  .work-title {
+    font-size: 18px;
+  }
+
+  footer {
+    padding-left: 20px;
+  }
+
+  #up-arrow {
+    bottom: 35px;
+    right: 35px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  body {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  #udacity-logo {
+    width: 75px;
+  }
+
+  #name {
+    font-size: 44px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+  }
+
+  .hr-line {
+    height: 4px;
+  }
+
+  #featured-work h2 {
+    font-size: 28px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .work {
+    width: 30%;
+    text-align: center;
+  }
+
+  #work-col-1, #work-col-3 {
+    margin: 0;
+  }
+
+  #work-col-2 {
+    margin: 0 5%;
+  }
+
+  .work-photo {
+    width: 100%;
+  }
+
+  .work-title {
+    font-size: 20px;
+  }
+
+  #up-arrow {
+    bottom: 50px;
+    right: 75px;
+  }
+
+  #up-arrow:hover {
+    padding: 30px;
+    bottom: 35px;
+    right: 60px;
+  }
+}
