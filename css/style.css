@@ -169,10 +169,6 @@ footer {
   display: none;
 }
 
-#up-arrow:hover {
-  background-color: #8AB0AB;
-}
-
 /*
 *
 * MEDIA QUERIES
@@ -366,5 +362,6 @@ footer {
     padding: 30px;
     bottom: 35px;
     right: 60px;
+    background-color: #8AB0AB;
   }
 }
